@@ -32,6 +32,15 @@ BaseType "Relic"
 	DisableDropSound True
 	CustomAlertSound "1.mp3" 283
 
+Show 
+BaseType "Key" 
+	SetFontSize 45
+	SetTextColor 161 158 169 255
+	PlayAlertSound 2 300
+	PlayEffect Grey
+	MinimapIcon 1 White Star
+	DisableDropSound True
+	CustomAlertSound "1.mp3" 283
 
 #--------------------------------------------------------------League Specific--------------------------------------------------------------
 
@@ -110,7 +119,16 @@ BaseType = "Breachstone"
 	PlayEffect Purple
 	MinimapIcon 0 Purple Moon
 	DisableDropSound True
-	CustomAlertSound "3Oh amazing.mp3" 283 
+	CustomAlertSound "3Oh amazing.mp3" 283
+
+Show
+BaseType = "Breach Ring"
+	SetFontSize 45
+	SetTextColor 130 37 126 255
+	PlayEffect Purple
+	MinimapIcon 1 Purple Moon
+	DisableDropSound True
+	CustomAlertSound "4.mp3" 283 
 
 #-------------------------------Expedition-------------------------------
 Show
