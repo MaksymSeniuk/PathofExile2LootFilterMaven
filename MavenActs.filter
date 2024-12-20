@@ -80,7 +80,6 @@ BaseType = "Simulacrum Splinter"
 	CustomAlertSound "3.mp3" 283
 
 Show
-Class "Currency"
 BaseType = "Simulacrum" 
 	SetFontSize 45
 	SetTextColor 200 200 200 255
@@ -112,7 +111,6 @@ BaseType = "Breach Splinter"
 	CustomAlertSound "3.mp3" 283
 
 Show
-Class "Breachstone"
 BaseType = "Breachstone"
 	SetFontSize 45
 	SetTextColor 130 37 126 255
@@ -132,7 +130,6 @@ BaseType = "Breach Ring"
 
 #-------------------------------Expedition-------------------------------
 Show
-Class "Currency"
 BaseType "Logbook"
 	SetFontSize 45
 	SetTextColor 43 69 128 255
