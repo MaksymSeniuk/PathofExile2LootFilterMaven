@@ -512,7 +512,7 @@ Class "Body" "Helmet" "Boots" "Gloves" "Shields" "Mace" "Staff" "Quarter" "Cross
 Show
 Rarity Rare
 Class "Body" "Helmet" "Boots" "Gloves" "Shields" "Mace" "Staff" "Quarter" "Crossbow" "Wand" "Sceptre" "Foci" "Quiver" "Belt" "Bows" "Ring" "Amulet"
-AreaLevel >= 83
+BaseType "Expert "
 	SetFontSize 35
 	MinimapIcon 2 Yellow Hexagon
 
