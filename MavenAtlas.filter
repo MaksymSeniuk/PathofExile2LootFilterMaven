@@ -25,10 +25,10 @@ BaseType "Djinn"
 Show 
 BaseType "Relic" 
 	SetFontSize 45
-	SetTextColor 161 158 169 255
+	SetTextColor 186 102 42 255
 	PlayAlertSound 2 300
-	PlayEffect Grey
-	MinimapIcon 1 White Star
+	PlayEffect Brown
+	MinimapIcon 1 Brown Star
 	DisableDropSound True
 	CustomAlertSound "1.mp3" 283
 

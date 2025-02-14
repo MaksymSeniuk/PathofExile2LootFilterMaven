@@ -1,6 +1,154 @@
-##---------------------------------------------------------------------------------------------Currency---------------------------------------------------------------------------------------------
+###---------------------------------------------------------------------------------------------Campaign---------------------------------------------------------------------------------------------
 
-#--------------------------------------------------------------Trial Specific--------------------------------------------------------------
+Show
+Class "Flask"
+	AreaLevel < 65
+Show
+Class "Currency"
+BaseType "Scroll of Wisdom" 
+	AreaLevel < 65
+	SetFontSize 35
+
+Show
+BaseType "Uncut Support"
+	AreaLevel < 65
+	SetFontSize 35
+	SetTextColor 255 255 255 255
+	PlayEffect Grey
+	MinimapIcon 1 Grey Triangle
+
+Show
+BaseType "Uncut Skill"
+	AreaLevel < 65
+	SetFontSize 35
+	SetTextColor 255 255 255 255
+	PlayEffect White
+	MinimapIcon 1 White Triangle
+
+Show
+BaseType "Uncut Spirit"
+	AreaLevel < 65
+	SetFontSize 35
+	SetTextColor 171 230 249 255
+	PlayEffect Cyan
+	MinimapIcon 1 Cyan Triangle
+
+###---------------------------------------------------------------------------------------------League Specific---------------------------------------------------------------------------------------------
+
+##--------------------------------------------------------------Essences--------------------------------------------------------------
+
+Show 
+BaseType "Essence" 
+	SetFontSize 40
+	SetTextColor 70 181 175 255
+	PlayAlertSound 2 300
+	PlayEffect Cyan
+	MinimapIcon 1 Cyan UpsideDownHouse
+	DisableDropSound True
+	CustomAlertSound "2.mp3" 283
+
+##--------------------------------------------------------------Delirium--------------------------------------------------------------
+
+Show
+BaseType = "Distilled" 
+	SetFontSize 40
+	SetTextColor 200 200 200 255
+	PlayEffect Grey
+	MinimapIcon 1 Grey Raindrop
+	DisableDropSound True
+	CustomAlertSound "2.mp3" 283
+
+Show
+BaseType = "Simulacrum Splinter" 
+	SetFontSize 40
+	SetTextColor 200 200 200 255
+	PlayEffect Grey
+	MinimapIcon 0 Grey Raindrop
+	DisableDropSound True
+	CustomAlertSound "3.mp3" 283
+
+Show
+BaseType = "Simulacrum" 
+	SetFontSize 40
+	SetTextColor 200 200 200 255
+	PlayEffect Grey
+	MinimapIcon 0 Grey Raindrop
+	DisableDropSound True
+	CustomAlertSound "3Oh amazing.mp3" 283
+
+##--------------------------------------------------------------Breach--------------------------------------------------------------
+
+Show
+BaseType = "Catalyst"
+	SetFontSize 40
+	SetTextColor 130 37 126 255
+	PlayEffect Purple
+	MinimapIcon 1 Purple Moon
+	DisableDropSound True
+	CustomAlertSound "2.mp3" 283
+
+Show
+BaseType = "Breach Splinter"
+	SetFontSize 40
+	SetTextColor 130 37 126 255
+	PlayEffect Purple
+	MinimapIcon 0 Purple Moon
+	DisableDropSound True
+	CustomAlertSound "3.mp3" 283
+
+Show
+BaseType = "Breachstone"
+	SetFontSize 40
+	SetTextColor 130 37 126 255
+	PlayEffect Purple
+	MinimapIcon 0 Purple Moon
+	DisableDropSound True
+	CustomAlertSound "3Oh amazing.mp3" 283 
+
+Show
+BaseType = "Breach Ring"
+	SetFontSize 40
+	SetTextColor 130 37 126 255
+	PlayEffect Purple
+	MinimapIcon 1 Purple Moon
+	DisableDropSound True
+	CustomAlertSound "4.mp3" 283 
+
+##--------------------------------------------------------------Expedition--------------------------------------------------------------
+
+Show
+BaseType "Logbook"
+	SetFontSize 45
+	SetTextColor 43 69 128 255
+	PlayAlertSound 3 300
+	PlayEffect Blue
+	MinimapIcon 0 Blue Kite
+	DisableDropSound True
+	CustomAlertSound "3Oh amazing.mp3" 283
+
+Show
+BaseType "Artifact"
+	SetFontSize 45
+	SetTextColor 43 69 128 255
+	PlayAlertSound 3 300
+	PlayEffect Blue
+	MinimapIcon 2 Blue Kite
+	DisableDropSound True
+	CustomAlertSound "2.mp3" 283
+
+Show
+BaseType "Exotic Coinage"
+	SetFontSize 45
+	SetTextColor 43 69 128 255
+	PlayAlertSound 3 300
+	PlayEffect Blue
+	MinimapIcon 1 Blue Kite
+	DisableDropSound True
+	CustomAlertSound "3.mp3" 283
+
+###---------------------------------------------------------------------------------------------Trial Specific---------------------------------------------------------------------------------------------
+
+##--------------------------------------------------------------Ultimatum Trial--------------------------------------------------------------
 
 Show 
 BaseType "Ultimatum" 
@@ -11,6 +159,8 @@ BaseType "Ultimatum"
 	MinimapIcon 1 Red Star
 	DisableDropSound True
 	CustomAlertSound "2.mp3" 283
+
+##--------------------------------------------------------------Sekhema Trial--------------------------------------------------------------
 
 Show 
 BaseType "Djinn" 
@@ -25,10 +175,10 @@ BaseType "Djinn"
 Show 
 BaseType "Relic" 
 	SetFontSize 45
-	SetTextColor 161 158 169 255
+	SetTextColor 186 102 42 255
 	PlayAlertSound 2 300
-	PlayEffect Grey
-	MinimapIcon 1 White Star
+	PlayEffect Brown
+	MinimapIcon 1 Brown Star
 	DisableDropSound True
 	CustomAlertSound "1.mp3" 283
 
@@ -42,125 +192,10 @@ BaseType "Key"
 	DisableDropSound True
 	CustomAlertSound "1.mp3" 283
 
-#--------------------------------------------------------------League Specific--------------------------------------------------------------
 
-#-------------------------------Essences-------------------------------
+###---------------------------------------------------------------------------------------------Currency---------------------------------------------------------------------------------------------
 
-Show 
-Class "Currency"
-BaseType "Essence" 
-	SetFontSize 45
-	SetTextColor 70 181 175 255
-	PlayAlertSound 2 300
-	PlayEffect Cyan
-	MinimapIcon 1 Cyan UpsideDownHouse
-	DisableDropSound True
-	CustomAlertSound "2.mp3" 283
-
-#-------------------------------Delirium-------------------------------
-
-Show
-Class "Currency"
-BaseType = "Distilled" 
-	SetFontSize 45
-	SetTextColor 200 200 200 255
-	PlayEffect Grey
-	MinimapIcon 2 Grey Raindrop
-	DisableDropSound True
-	CustomAlertSound "2.mp3" 283
-
-Show
-Class "Currency"
-BaseType = "Simulacrum Splinter" 
-	SetFontSize 45
-	SetTextColor 200 200 200 255
-	PlayEffect Grey
-	MinimapIcon 0 Grey Raindrop
-	DisableDropSound True
-	CustomAlertSound "3.mp3" 283
-
-Show
-BaseType = "Simulacrum" 
-	SetFontSize 45
-	SetTextColor 200 200 200 255
-	PlayEffect Grey
-	MinimapIcon 0 Grey Raindrop
-	DisableDropSound True
-	CustomAlertSound "3Oh amazing.mp3" 283
-
-#-------------------------------Breach-------------------------------
-
-Show
-Class "Currency"
-BaseType = "Catalyst"
-	SetFontSize 45
-	SetTextColor 130 37 126 255
-	PlayEffect Purple
-	MinimapIcon 1 Purple Moon
-	DisableDropSound True
-	CustomAlertSound "2.mp3" 283
-
-Show
-Class "Currency"
-BaseType = "Breach Splinter"
-	SetFontSize 45
-	SetTextColor 130 37 126 255
-	PlayEffect Purple
-	MinimapIcon 0 Purple Moon
-	DisableDropSound True
-	CustomAlertSound "3.mp3" 283
-
-Show
-BaseType = "Breachstone"
-	SetFontSize 45
-	SetTextColor 130 37 126 255
-	PlayEffect Purple
-	MinimapIcon 0 Purple Moon
-	DisableDropSound True
-	CustomAlertSound "3Oh amazing.mp3" 283 
-
-Show
-BaseType = "Breach Ring"
-	SetFontSize 45
-	SetTextColor 130 37 126 255
-	PlayEffect Purple
-	MinimapIcon 1 Purple Moon
-	DisableDropSound True
-	CustomAlertSound "4.mp3" 283 
-
-#-------------------------------Expedition-------------------------------
-Show
-BaseType "Logbook"
-	SetFontSize 45
-	SetTextColor 43 69 128 255
-	PlayAlertSound 3 300
-	PlayEffect Blue
-	MinimapIcon 0 Blue Kite
-	DisableDropSound True
-	CustomAlertSound "3Oh amazing.mp3" 283
-
-Show
-Class "Currency"
-BaseType "Artifact"
-	SetFontSize 45
-	SetTextColor 43 69 128 255
-	PlayAlertSound 3 300
-	PlayEffect Blue
-	MinimapIcon 2 Blue Kite
-	DisableDropSound True
-	CustomAlertSound "2.mp3" 283
-Show
-Class "Currency"
-BaseType "Exotic Coinage"
-	SetFontSize 45
-	SetTextColor 43 69 128 255
-	PlayAlertSound 3 300
-	PlayEffect Blue
-	MinimapIcon 1 Blue Kite
-	DisableDropSound True
-	CustomAlertSound "3.mp3" 283
-
-#--------------------------------------------------------------Jeweller's Orb--------------------------------------------------------------
+##--------------------------------------------------------------Jeweller's Orb--------------------------------------------------------------
 
 Show 
 Class "Currency"
@@ -198,13 +233,14 @@ BaseType "Lesser Jeweller's Orb"
 	DisableDropSound True
 	CustomAlertSound "2Special_mine.mp3" 283
 
-#--------------------------------------------------------------Basic Currency--------------------------------------------------------------
+##--------------------------------------------------------------Basic Currency--------------------------------------------------------------
 
 #-------------------------------T0 currency-------------------------------
+
 Show 
 Class "Currency"
 BaseType "Mirror of Kalandra" "Mirror Shard"
-	SetFontSize 45
+	SetFontSize 40
 	SetTextColor 255 255 255 255
 	SetBackgroundColor 240 90 35 255
 	PlayAlertSound 1 300
@@ -216,7 +252,7 @@ BaseType "Mirror of Kalandra" "Mirror Shard"
 Show 
 Class "Currency"
 BaseType "Orb of Annulment"
-	SetFontSize 45
+	SetFontSize 40
 	SetTextColor 0 0 0 255
 	SetBackgroundColor 255 255 255 255
 	PlayAlertSound 1 300
@@ -226,10 +262,11 @@ BaseType "Orb of Annulment"
 	CustomAlertSound "5Ahh_that.mp3" 283
 
 #-------------------------------T1 currency-------------------------------
+
 Show 
 Class "Currency"
 BaseType "Divine Orb"
-	SetFontSize 45
+	SetFontSize 40
 	SetTextColor 255 255 255 255
 	SetBackgroundColor 240 90 35 255
 	PlayAlertSound 1 300
@@ -241,7 +278,7 @@ BaseType "Divine Orb"
 Show 
 Class "Currency"
 BaseType "Exalted Orb"
-	SetFontSize 45
+	SetFontSize 40
 	SetTextColor 255 255 255 255
 	SetBackgroundColor 240 90 35 255
 	PlayEffect Orange
@@ -251,10 +288,34 @@ BaseType "Exalted Orb"
 
 Show 
 Class "Currency"
-BaseType "Chaos Orb" "Orb of Chance" "Orb of Alchemy"
-	SetFontSize 45
+BaseType "Chaos Orb"
+	SetFontSize 40
 	SetTextColor 255 255 255 255
 	SetBackgroundColor 222 176 91 255
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Circle
+	DisableDropSound True
+	CustomAlertSound "3Chaos.mp3" 283
+
+Show 
+Class "Currency"
+BaseType "Orb of Chance"
+	SetFontSize 40
+	SetTextColor 255 255 255 255
+	SetBackgroundColor 255 190 75 255
+	SetBorderColor 0 0 0 255
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Circle
+	DisableDropSound True
+	CustomAlertSound "2Uu_brutal.mp3" 283
+
+Show 
+Class "Currency"
+BaseType "Orb of Alchemy"
+	SetFontSize 40
+	SetTextColor 0 0 0 255
+	SetBackgroundColor 255 190 75 255
+	SetBorderColor 0 0 0 255
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Circle
 	DisableDropSound True
@@ -263,7 +324,7 @@ BaseType "Chaos Orb" "Orb of Chance" "Orb of Alchemy"
 Show 
 Class "Currency"
 BaseType "Vaal Orb"
-	SetFontSize 45
+	SetFontSize 40
 	SetTextColor 225 0 0 255
 	SetBackgroundColor 74 10 10 255
 	PlayEffect Red
@@ -272,12 +333,14 @@ BaseType "Vaal Orb"
 	CustomAlertSound "2Uu_brutal.mp3" 283
 
 #-------------------------------T2 Currency-------------------------------
+
 Show 
 Class "Currency"
 BaseType "Chance Shard"
-	SetFontSize 45
+	SetFontSize 40
 	SetTextColor 255 255 255 255
-	SetBackgroundColor 222 176 91 255
+	SetBackgroundColor 255 190 75 255
+	SetBorderColor 255 255 255 255
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Circle
 	DisableDropSound True
@@ -286,7 +349,7 @@ BaseType "Chance Shard"
 Show 
 Class "Currency"
 BaseType "Gemcutter's Prism" "Glassblower's Bauble"
-	SetFontSize 45
+	SetFontSize 40
 	SetTextColor 162 151 207 255
 	SetBackgroundColor 30 190 190 100
 	PlayEffect Yellow
@@ -296,8 +359,19 @@ BaseType "Gemcutter's Prism" "Glassblower's Bauble"
 
 Show 
 Class "Currency"
-BaseType "Regal Orb" "Regal Shard" 
-	SetFontSize 45
+BaseType "Regal Orb"
+	SetFontSize 40
+	SetTextColor 49 55 143 255
+	SetBackgroundColor 210 143 51 200
+	PlayEffect Yellow
+	MinimapIcon 2 Yellow Circle
+	DisableDropSound True
+	CustomAlertSound "2Uh unusual.mp3" 283
+
+Show 
+Class "Currency"
+BaseType "Regal Shard" 
+	SetFontSize 35
 	SetTextColor 49 55 143 255
 	SetBackgroundColor 210 143 51 200
 	PlayEffect Yellow
@@ -308,7 +382,7 @@ BaseType "Regal Orb" "Regal Shard"
 Show 
 Class "Currency"
 BaseType "Artificer's Orb" 
-SetFontSize 45
+SetFontSize 40
 	SetTextColor 20 0 40 255
 	SetBackgroundColor 149 150 155 255
 	PlayAlertSound 2 300
@@ -320,7 +394,7 @@ SetFontSize 45
 Show 
 Class "Currency"
 BaseType "Blacksmith's Whetstone" "Armourer's Scrap" "Arcanist's Etcher"
-	SetFontSize 45
+	SetFontSize 40
 	SetTextColor 20 0 40 255
 	SetBackgroundColor 149 150 155 255
 	PlayAlertSound 2 300
@@ -330,10 +404,11 @@ BaseType "Blacksmith's Whetstone" "Armourer's Scrap" "Arcanist's Etcher"
 	CustomAlertSound "1Good.mp3" 283
 
 #-------------------------------T3 Currency-------------------------------
+
 Show 
 Class "Currency"
 BaseType "Artificer's Shard"
-	SetFontSize 45
+	SetFontSize 40
 	SetTextColor 20 0 40 255
 	SetBackgroundColor 149 150 155 255
 	PlayAlertSound 2 300
@@ -344,23 +419,33 @@ BaseType "Artificer's Shard"
 
 Show 
 Class "Currency"
-BaseType "Orb of Augmentation" "Orb of Transmutation" "Transmutation Shard" 
+BaseType "Orb of Augmentation"
 	SetFontSize 35
 	DisableDropSound True
-	SetTextColor 58 95 140 255
+	SetTextColor 78 180 255 185
+	PlayEffect Blue
+	MinimapIcon 2 Blue Circle
+	CustomAlertSound "1.mp3" 283
+
+Show 
+Class "Currency"
+BaseType "Orb of Transmutation" "Transmutation Shard" 
+	SetFontSize 35
+	DisableDropSound True
+	SetTextColor 58 95 170 255
 	PlayEffect Blue
 	MinimapIcon 2 Blue Circle
 	CustomAlertSound "1.mp3" 283
 
 #-------------------------------T4 Currency-------------------------------
 
-Show
+Hide
 Class "Currency"
 BaseType "Scroll of Wisdom" 
 	SetFontSize 35
 
-
 #-------------------------------Gold-------------------------------
+
 Show 
 Class "Currency"
 BaseType "Gold"
@@ -405,61 +490,131 @@ BaseType "Gold"
 	DisableDropSound True
 
 #-------------------------------Catch All Currency-------------------------------
+
 Show 
 Class "Currency"
 	SetFontSize 35
 
-#---------------------------------------------------------------------------------------------Atlas Specific---------------------------------------------------------------------------------------------
+###---------------------------------------------------------------------------------------------Atlas Specific---------------------------------------------------------------------------------------------
+
+##--------------------------------------------------------------Waystones (Maps)--------------------------------------------------------------
+
+#-------------------------------High Tier-------------------------------
 
 Show 
 Class "Waystones"
 BaseType "Waystone (Tier 10)" "Waystone (Tier 11)" "Waystone (Tier 12)" "Waystone (Tier 13)" "Waystone (Tier 14)" "Waystone (Tier 15)" "Waystone (Tier 16)"
-	SetFontSize 45
-	SetTextColor 255 207 255
-	SetBorderColor 255 207 255
-	SetBackgroundColor 65 20 80
-	PlayAlertSound 2 300
-	PlayEffect Purple
-	MinimapIcon 0 Purple Square
+	SetFontSize 40
+	SetTextColor 255 255 255
+	PlayEffect White
+	MinimapIcon 0 White Square
 	DisableDropSound True
 	CustomAlertSound "6map high t.mp3" 283
 
+#-------------------------------Low Tier-------------------------------
+
 Show 
 Class "Waystones"
-Rarity Normal Magic Rare 
 BaseType "Waystone (Tier 1)" "Waystone (Tier 2)" "Waystone (Tier 3)" "Waystone (Tier 4)" "Waystone (Tier 5)" "Waystone (Tier 6)" "Waystone (Tier 7)" "Waystone (Tier 8)" "Waystone (Tier 9)"
 	SetFontSize 40
-	SetTextColor 255 207 255
-	SetBorderColor 255 207 255
-	SetBackgroundColor 65 20 80
-	PlayEffect Purple
-	MinimapIcon 1 Purple Square
+	SetTextColor 255 255 255
+	PlayEffect White
+	MinimapIcon 1 White Square
 	DisableDropSound True
 	CustomAlertSound "6map low t.mp3" 283
+
+#-------------------------------Catch All Waystones-------------------------------
 
 Show 
 Class "Waystones"
-	SetFontSize 45
-	SetTextColor 255 207 255
-	SetBorderColor 255 207 255
-	SetBackgroundColor 65 20 80
-	PlayAlertSound 2 300
-	PlayEffect Purple
-	MinimapIcon 2 Purple Square
+	SetFontSize 40
+	SetTextColor 255 255 255
+	PlayEffect White
+	MinimapIcon 2 White Square
 	DisableDropSound True
 	CustomAlertSound "6map low t.mp3" 283
 
+##--------------------------------------------------------------Precursor Tablets--------------------------------------------------------------
+
+#-------------------------------Boss Tablets-------------------------------
+
 Show 
-BaseType "Simulacrum" "Tablet" "Breachstone" "Barya" "Ultimatum" 
+BaseType "Overseer Precursor Tablet" 
+	SetFontSize 40
+	SetTextColor 253 212 96 255
+	PlayAlertSound 2 300
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Square
+	CustomAlertSound "2.mp3" 283
+
+#-------------------------------Delirium Tablets-------------------------------
+
+Show 
+BaseType "Delirium Precursor Tablet" 
+	SetFontSize 40
+	SetTextColor 200 200 200 255
+	PlayAlertSound 2 300
+	PlayEffect Grey
+	MinimapIcon 1 Grey Square
+	CustomAlertSound "2.mp3" 283
+
+#-------------------------------Expedition Tablets-------------------------------
+
+Show 
+BaseType "Expedition Precursor Tablet" 
+	SetFontSize 40
+	SetTextColor 43 69 128 255
+	PlayAlertSound 2 300
+	PlayEffect Blue
+	MinimapIcon 1 Blue Square
+	CustomAlertSound "2.mp3" 283
+
+#-------------------------------Breach Tablets-------------------------------
+
+Show 
+BaseType "Breach Precursor Tablet" 
+	SetFontSize 40
+	SetTextColor 130 37 126 255
+	PlayAlertSound 2 300
+	PlayEffect Purple
+	MinimapIcon 1 Purple Square
+	CustomAlertSound "2.mp3" 283
+
+#-------------------------------Ritual Tablets-------------------------------
+
+Show 
+BaseType "Ritual Precursor Tablet" 
+	SetFontSize 40
+	SetTextColor 205 0 0 255
+	PlayAlertSound 2 300
+	PlayEffect Purple
+	MinimapIcon 1 Purple Square
+	CustomAlertSound "2.mp3" 283
+
+#-------------------------------Iradiated Tablets-------------------------------
+
+Show 
+BaseType "Precursor Tablet"
 	SetFontSize 40
 	SetTextColor 255 255 255 255
-	SetBackgroundColor 0 0 0 255
 	PlayAlertSound 2 300
 	PlayEffect White
 	MinimapIcon 2 White Square
 	CustomAlertSound "2.mp3" 283
 
-#---------------------------------------------------------------------------------------------Socketable---------------------------------------------------------------------------------------------
+#-------------------------------Catch all Tablets-------------------------------
+
+Show 
+BaseType "Tablet"
+	SetFontSize 40
+	SetTextColor 255 255 255 255
+	PlayAlertSound 2 300
+	PlayEffect White
+	MinimapIcon 2 White Square
+	CustomAlertSound "2.mp3" 283
+
+
+###---------------------------------------------------------------------------------------------Socketable---------------------------------------------------------------------------------------------
 
 Show
 Class "Socketable"
@@ -478,23 +633,47 @@ BaseType = "soul core"
 	DisableDropSound True
 	CustomAlertSound "1.mp3" 283
 
-#---------------------------------------------------------------------------------------------GEMs---------------------------------------------------------------------------------------------
+###---------------------------------------------------------------------------------------------GEMs---------------------------------------------------------------------------------------------
+
+##--------------------------------------------------------------Spirit--------------------------------------------------------------
+
+Show
+BaseType "Uncut Spirit"
+	SetFontSize 35
+	SetTextColor 171 230 249 255
+	PlayEffect Cyan
+	MinimapIcon 1 Cyan Triangle
+
+##--------------------------------------------------------------Skill--------------------------------------------------------------
 
 Show
 BaseType "Uncut Skill"
+	ItemLevel >= 15
+	AreaLevel > 65
 	SetFontSize 35
 	SetTextColor 255 255 255 255
 	PlayEffect White
 	MinimapIcon 1 White Triangle
 
-Show
+Hide
+BaseType "Uncut Skill"
+	
+##--------------------------------------------------------------Support--------------------------------------------------------------
+
+Hide
 BaseType "Uncut Support"
+
+##--------------------------------------------------------------Catch All Uncut--------------------------------------------------------------
+	
+Show
+BaseType "Uncut"
 	SetFontSize 35
 	SetTextColor 255 255 255 255
-	PlayEffect Grey
-	MinimapIcon 1 Grey Triangle
+	PlayEffect White
+	MinimapIcon 1 White Triangle
 
-#---------------------------------------------------------------------------------------------Gear---------------------------------------------------------------------------------------------
+###---------------------------------------------------------------------------------------------Gear---------------------------------------------------------------------------------------------
+
 Show 
 Rarity Unique
 	SetFontSize 45
@@ -513,7 +692,7 @@ Class "Jewel"
 
 Show
 Quality > 0
-Class "Body" "Helmet" "Boots" "Gloves" "Shields" "Mace" "Staff" "Quarter" "Crossbow" "Wand" "Sceptre" "Foci" "Quiver" "Belt" "Bows" "Ring" "Amulet"
+Class "Body" "Helmet" "Boots" "Gloves" "Shields" "Mace" "Staff" "Quarter" "Crossbow" "Wand" "Sceptre" "Foci" "Quiver" "Belt" "Bows" "Ring" "Amulet" "Flask" "Charm"
 	SetFontSize 35
 	SetTextColor 255 255 255 255
 	MinimapIcon 1 White Hexagon
@@ -522,27 +701,26 @@ Class "Body" "Helmet" "Boots" "Gloves" "Shields" "Mace" "Staff" "Quarter" "Cross
 
 Show 
 Rarity Rare
-Class "Body" "Helmet" "Boots" "Gloves" "Shields" "Mace" "Staff" "Quarter" "Crossbow" "Wand" "Sceptre" "Foci" "Quiver" "Belt" "Bows" "Ring" "Amulet"
-	SetFontSize 35
+Class "Body" "Helmet" "Boots" "Gloves" "Shields" "Mace" "Staff" "Quarter" "Crossbow" "Wand" "Sceptre" "Foci" "Quiver" "Belt" "Bows" "Ring" "Amulet" "Charm"
+	SetFontSize 30
 	MinimapIcon 2 Yellow Hexagon
 	DisableDropSound True
 
 Show
 Rarity Magic
-Class "Body" "Helmet" "Boots" "Gloves" "Shields" "Mace" "Staff" "Quarter" "Crossbow" "Wand" "Sceptre" "Foci" "Quiver" "Belt" "Bows" "Ring" "Amulet"
-	SetFontSize 35
+Class "Body" "Helmet" "Boots" "Gloves" "Shields" "Mace" "Staff" "Quarter" "Crossbow" "Wand" "Sceptre" "Foci" "Quiver" "Belt" "Bows" "Ring" "Amulet" "Charm"
+	SetFontSize 30
 	MinimapIcon 2 Blue Hexagon
 	DisableDropSound True
 	
 Show
 Rarity Normal
-Class "Body" "Helmet" "Boots" "Gloves" "Shields" "Mace" "Staff" "Quarter" "Crossbow" "Wand" "Sceptre" "Foci" "Quiver" "Belt" "Bows" "Ring" "Amulet"
-	SetFontSize 35
+Class "Body" "Helmet" "Boots" "Gloves" "Shields" "Mace" "Staff" "Quarter" "Crossbow" "Wand" "Sceptre" "Foci" "Quiver" "Belt" "Bows" "Ring" "Amulet" "Charm"
+	SetFontSize 30
 	MinimapIcon 2 Grey Hexagon
 	DisableDropSound True
 
-	
-Show
+Hide
 Class "Flask"
 
 
