@@ -263,6 +263,17 @@ BaseType "Orb of Annulment"
 
 #-------------------------------T1 currency-------------------------------
 
+#Show
+#Class "Currency"
+#BaseType "Fracturing Orb" "Fracturing Shard"
+#	SetFontSize 40
+#	SetTextColor 255 255 255 255
+#	SetBackgroundColor 255 90 35 255
+#	PlayEffect Orange
+#	MinimapIcon 1 Orange Circle
+#	DisableDropSound True
+#	CustomAlertSound "3Ahh_fascinating.mp3" 283
+
 Show 
 Class "Currency"
 BaseType "Divine Orb"
@@ -616,12 +627,15 @@ BaseType "Tablet"
 
 ###---------------------------------------------------------------------------------------------Socketable---------------------------------------------------------------------------------------------
 
-Show
-Class "Socketable"
-BaseType = "rune" 
-	SetFontSize 45
-	PlayEffect Grey
-	MinimapIcon 1 Grey Pentagon
+#Show
+#Class "Socketable"
+#BaseType = "talisman"
+#	SetFontSize 45
+#	SetTextColor 255 207 255
+#	PlayEffect Purple
+#	MinimapIcon 1 Purple Pentagon
+#	DisableDropSound True
+#	CustomAlertSound "1.mp3" 283
 
 Show
 Class "Socketable"
@@ -632,6 +646,18 @@ BaseType = "soul core"
 	MinimapIcon 1 Red Pentagon
 	DisableDropSound True
 	CustomAlertSound "1.mp3" 283
+
+Show
+Class "Socketable"
+BaseType = "rune" 
+	SetFontSize 45
+	PlayEffect Grey
+	MinimapIcon 1 Grey Pentagon
+
+Show
+Class "Socketable"
+	SetFontSize 35
+	MinimapIcon 1 White Pentagon
 
 ###---------------------------------------------------------------------------------------------GEMs---------------------------------------------------------------------------------------------
 
@@ -689,33 +715,39 @@ Class "Jewel"
 	SetTextColor 103 194 223 255
 	PlayEffect Cyan
 	MinimapIcon 1 Cyan Pentagon	
+Show
+Sockets > 0
+Class "Body" "Helmet" "Boots" "Gloves" "Shields" "Mace" "Staff" "Quarter" "Crossbow" "Wand" "Sceptre" "Foci" "Quiver" "Belt" "Bows" "Ring" "Amulet" "Flask" "Charm" "Spears" "Bucklers"
+	SetFontSize 35
+	MinimapIcon 1 Grey Pentagon
+	PlayEffect Grey
+	DisableDropSound True
 
 Show
 Quality > 0
-Class "Body" "Helmet" "Boots" "Gloves" "Shields" "Mace" "Staff" "Quarter" "Crossbow" "Wand" "Sceptre" "Foci" "Quiver" "Belt" "Bows" "Ring" "Amulet" "Flask" "Charm"
+Class "Body" "Helmet" "Boots" "Gloves" "Shields" "Mace" "Staff" "Quarter" "Crossbow" "Wand" "Sceptre" "Foci" "Quiver" "Belt" "Bows" "Ring" "Amulet" "Flask" "Charm" "Spears" "Bucklers"
 	SetFontSize 35
-	SetTextColor 255 255 255 255
 	MinimapIcon 1 White Hexagon
 	PlayEffect Grey
 	DisableDropSound True
 
 Show 
 Rarity Rare
-Class "Body" "Helmet" "Boots" "Gloves" "Shields" "Mace" "Staff" "Quarter" "Crossbow" "Wand" "Sceptre" "Foci" "Quiver" "Belt" "Bows" "Ring" "Amulet" "Charm"
+Class "Body" "Helmet" "Boots" "Gloves" "Shields" "Mace" "Staff" "Quarter" "Crossbow" "Wand" "Sceptre" "Foci" "Quiver" "Belt" "Bows" "Ring" "Amulet" "Flask" "Charm" "Spears" "Bucklers"
 	SetFontSize 30
 	MinimapIcon 2 Yellow Hexagon
 	DisableDropSound True
 
 Show
 Rarity Magic
-Class "Body" "Helmet" "Boots" "Gloves" "Shields" "Mace" "Staff" "Quarter" "Crossbow" "Wand" "Sceptre" "Foci" "Quiver" "Belt" "Bows" "Ring" "Amulet" "Charm"
+Class "Body" "Helmet" "Boots" "Gloves" "Shields" "Mace" "Staff" "Quarter" "Crossbow" "Wand" "Sceptre" "Foci" "Quiver" "Belt" "Bows" "Ring" "Amulet" "Flask" "Charm" "Spears" "Bucklers"
 	SetFontSize 30
 	MinimapIcon 2 Blue Hexagon
 	DisableDropSound True
 	
 Show
 Rarity Normal
-Class "Body" "Helmet" "Boots" "Gloves" "Shields" "Mace" "Staff" "Quarter" "Crossbow" "Wand" "Sceptre" "Foci" "Quiver" "Belt" "Bows" "Ring" "Amulet" "Charm"
+Class "Body" "Helmet" "Boots" "Gloves" "Shields" "Mace" "Staff" "Quarter" "Crossbow" "Wand" "Sceptre" "Foci" "Quiver" "Belt" "Bows" "Ring" "Amulet" "Flask" "Charm" "Spears" "Bucklers"
 	SetFontSize 30
 	MinimapIcon 2 Grey Hexagon
 	DisableDropSound True
