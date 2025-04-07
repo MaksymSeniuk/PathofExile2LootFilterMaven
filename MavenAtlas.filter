@@ -227,6 +227,17 @@ BaseType "Orb of Annulment"
 
 #-------------------------------T1 currency-------------------------------
 
+Show
+Class "Currency"
+BaseType "Fracturing Orb" "Fracturing Shard"
+	SetFontSize 40
+	SetTextColor 255 255 255 255
+	SetBackgroundColor 255 90 35 255
+	PlayEffect Orange
+	MinimapIcon 1 Orange Circle
+	DisableDropSound True
+	CustomAlertSound "3Ahh_fascinating.mp3" 283
+
 Show 
 Class "Currency"
 BaseType "Divine Orb"
@@ -379,7 +390,7 @@ BaseType "Orb of Augmentation" "Orb of Transmutation" "Transmutation Shard"
 
 #-------------------------------T4 Currency-------------------------------
 
-Hide
+Show
 Class "Currency"
 BaseType "Scroll of Wisdom" 
 	SetFontSize 35
@@ -486,19 +497,19 @@ BaseType "Simulacrum" "Tablet" "Breachstone" "Barya" "Ultimatum"
 
 #---------------------------------------------------------------------------------------------Socketable---------------------------------------------------------------------------------------------
 
-#Show
-#Class "Socketable"
-#BaseType = "talisman"
-#	SetFontSize 45
-#	SetTextColor 255 207 255
-#	PlayEffect Purple
-#	MinimapIcon 1 Purple Pentagon
-#	DisableDropSound True
-#	CustomAlertSound "1.mp3" 283
+Show
+Class "Socketable"
+BaseType "talisman"
+	SetFontSize 45
+	SetTextColor 255 207 255
+	PlayEffect Purple
+	MinimapIcon 1 Purple Pentagon
+	DisableDropSound True
+	CustomAlertSound "1.mp3" 283
 
 Show
 Class "Socketable"
-BaseType = "soul core"
+BaseType "soul core"
 	SetFontSize 45
 	SetTextColor 160 37 30 255
 	PlayEffect Red
@@ -508,7 +519,7 @@ BaseType = "soul core"
 
 Show
 Class "Socketable"
-BaseType = "rune" 
+BaseType "rune" 
 	SetFontSize 45
 	PlayEffect Grey
 	MinimapIcon 1 Grey Pentagon
@@ -521,29 +532,71 @@ Class "Socketable"
 
 #---------------------------------------------------------------------------------------------GEMs---------------------------------------------------------------------------------------------
 
+
 Show
-BaseType "Uncut Skill"
-ItemLevel >= 16
-	SetFontSize 35
-	SetTextColor 255 255 255 255
-	PlayEffect White
-	MinimapIcon 1 White Triangle
-Show
-BaseType "Uncut Skill"
-ItemLevel < 16
+BaseType "Uncut"
+	ItemLevel >= 16
 	SetFontSize 35
 	SetTextColor 255 255 255 255
 	PlayEffect White
 	MinimapIcon 1 White Triangle
 
-Show
+Hide
+BaseType "Uncut"
+	
+##--------------------------------------------------------------Support--------------------------------------------------------------
+
+Hide
 BaseType "Uncut Support"
+
+##--------------------------------------------------------------Catch All Uncut--------------------------------------------------------------
+	
+Show
+BaseType "Uncut"
 	SetFontSize 35
 	SetTextColor 255 255 255 255
-	PlayEffect Grey
-	MinimapIcon 1 Grey Triangle
-
+	PlayEffect White
+	MinimapIcon 1 White Triangle
 #---------------------------------------------------------------------------------------------Gear---------------------------------------------------------------------------------------------
+
+##--------------------------------------------------------------Quality & Sockets--------------------------------------------------------------
+
+Show
+Sockets > 0
+Class "Body" "Helmet" "Boots" "Gloves" "Shields" "Mace" "Staff" "Quarter" "Crossbow" "Wand" "Sceptre" "Foci" "Quiver" "Belt" "Bows" "Ring" "Amulet" "Charm" "Spears" "Bucklers"
+	SetFontSize 35
+	MinimapIcon 1 Grey Pentagon
+	PlayEffect Grey
+	DisableDropSound True
+
+Show
+Quality > 0
+Class "Body" "Helmet" "Boots" "Gloves" "Shields" "Mace" "Staff" "Quarter" "Crossbow" "Wand" "Sceptre" "Foci" "Quiver" "Belt" "Bows" "Ring" "Amulet" "Charm" "Spears" "Bucklers" "Flask"
+	SetFontSize 35
+	MinimapIcon 1 White Hexagon
+	PlayEffect Grey
+	DisableDropSound True
+
+##--------------------------------------------------------------Specific Bases--------------------------------------------------------------
+
+#-------------------------------Bows-------------------------------
+
+Show
+Class "Bows"
+BaseType "Twin Bow" "Gemini Bow"
+	SetFontSize 35
+	MinimapIcon 2 Grey Hexagon
+	DisableDropSound True
+
+Show
+Class "Quiver"
+BaseType "Primed Quiver"
+	SetFontSize 35
+	MinimapIcon 2 Grey Hexagon
+	DisableDropSound True
+
+##--------------------------------------------------------------Normal to Unique--------------------------------------------------------------
+
 Show 
 Rarity Unique
 	SetFontSize 45
@@ -560,50 +613,53 @@ Class "Jewel"
 	PlayEffect Cyan
 	MinimapIcon 1 Cyan Pentagon	
 
-Show
-Sockets > 0
-Class "Body" "Helmet" "Boots" "Gloves" "Shields" "Mace" "Staff" "Quarter" "Crossbow" "Wand" "Sceptre" "Foci" "Quiver" "Belt" "Bows" "Ring" "Amulet" "Flask" "Charm" "Spears" "Bucklers"
-	SetFontSize 35
-	MinimapIcon 1 Grey Pentagon
-	PlayEffect Grey
-	DisableDropSound True
 
-Show
-Quality > 0
-Class "Body" "Helmet" "Boots" "Gloves" "Shields" "Mace" "Staff" "Quarter" "Crossbow" "Wand" "Sceptre" "Foci" "Quiver" "Belt" "Bows" "Ring" "Amulet" "Flask" "Charm" "Spears" "Bucklers"
-	SetFontSize 35
-	MinimapIcon 1 White Hexagon
-	PlayEffect Grey
-	DisableDropSound True
 
+#-------------------------------Rare-------------------------------
 
 Show
 Rarity Rare
-Class "Body" "Helmet" "Boots" "Gloves" "Shields" "Mace" "Staff" "Quarter" "Crossbow" "Wand" "Sceptre" "Foci" "Quiver" "Belt" "Bows" "Ring" "Amulet" "Flask" "Charm" "Spears" "Bucklers"
+Class "Body" "Helmet" "Boots" "Gloves" "Shields" "Mace" "Staff" "Quarter" "Crossbow" "Wand" "Sceptre" "Foci" "Quiver" "Belt" "Bows" "Ring" "Amulet" "Charm" "Spears" "Bucklers"
 	SetFontSize 35
 	MinimapIcon 2 Yellow Hexagon
 	DisableDropSound True
 
+#-------------------------------Magic-------------------------------
+
 Show
-Rarity Normal
-Class "Body" "Helmet" "Boots" "Gloves" "Shields" "Mace" "Staff" "Quarter" "Crossbow" "Wand" "Sceptre" "Foci" "Quiver" "Belt" "Bows" "Ring" "Amulet" "Flask" "Charm" "Spears" "Bucklers"
-AreaLevel >= 83
-MinimapIcon 2 White Diamond
- 
-Hide
 Rarity Magic
-Class "Body" "Helmet" "Boots" "Gloves" "Shields" "Mace" "Staff" "Quarter" "Crossbow" "Wand" "Sceptre" "Foci" "Quiver" "Belt" "Bows" "Ring" "Amulet" "Flask" "Charm" "Spears" "Bucklers"
+Class "Boots" "Spears" "Quarter" "Belt" "Ring" "Amulet"
 	SetFontSize 35
 	MinimapIcon 2 Blue Hexagon
 	DisableDropSound True
-	
+
 Hide
+Rarity Magic
+Class "Body" "Helmet" "Boots" "Gloves" "Shields" "Mace" "Staff" "Quarter" "Crossbow" "Wand" "Sceptre" "Foci" "Quiver" "Belt" "Bows" "Ring" "Amulet" "Charm" "Spears" "Bucklers"
+	SetFontSize 35
+	DisableDropSound True
+
+#-------------------------------Normal-------------------------------
+
+Show
 Rarity Normal
-Class "Body" "Helmet" "Boots" "Gloves" "Shields" "Mace" "Staff" "Quarter" "Crossbow" "Wand" "Sceptre" "Foci" "Quiver" "Belt" "Bows" "Ring" "Amulet" "Flask" "Charm" "Spears" "Bucklers"
+Class "Body" "Helmet" "Boots" "Gloves" "Shields" "Mace" "Staff" "Quarter" "Crossbow" "Wand" "Sceptre" "Foci" "Quiver" "Belt" "Bows" "Ring" "Amulet" "Charm" "Spears" "Bucklers"
+AreaLevel >= 83
+	SetFontSize 35
+	MinimapIcon 2 Grey Hexagon
+
+Show
+Rarity Normal
+Class "Ring" "Amulet" "Belt" "Charm"
 	SetFontSize 35
 	MinimapIcon 2 Grey Hexagon
 	DisableDropSound True
 
+Hide
+Rarity Normal
+Class "Body" "Helmet" "Boots" "Gloves" "Shields" "Mace" "Staff" "Quarter" "Crossbow" "Wand" "Sceptre" "Foci" "Quiver" "Belt" "Bows" "Ring" "Amulet" "Charm" "Spears" "Bucklers"
+	SetFontSize 35
+	DisableDropSound True
 	
 Hide
 Class "Flask"
