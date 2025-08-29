@@ -33,7 +33,80 @@ BaseType "Uncut Spirit"
 	PlayEffect Cyan
 	MinimapIcon 1 Cyan Triangle
 
+###---------------------------------------------------------------------------------------------Pinnacle Keys-----------------------------------------------------------------------------------------------
+Show
+Class "Pinnacle Keys"
+	SetFontSize 45
+	SetTextColor 255 207 255
+	PlayEffect Red
+	MinimapIcon 1 Red Square
+	DisableDropSound True
+	CustomAlertSound "1.mp3" 283
+
+
 ###---------------------------------------------------------------------------------------------League Specific---------------------------------------------------------------------------------------------
+
+##--------------------------------------------------------------Abyss--------------------------------------------------------------
+
+Show 
+Class "Map Fragments"
+BaseType "Kulemak's Invitation"
+	SetFontSize 40
+	SetTextColor 255 255 255
+	PlayEffect Green
+	MinimapIcon 0 Green Diamond
+	DisableDropSound True
+
+Show
+Class "Socketable"
+BaseType "Gaze"
+	SetFontSize 45
+	SetTextColor 255 207 255
+	PlayEffect Green
+	MinimapIcon 1 Green Pentagon
+	DisableDropSound True
+	CustomAlertSound "1.mp3" 283
+
+Show
+Class "Currency"
+BaseType "Jawbone"
+	SetFontSize 45
+	SetTextColor 255 207 255
+	PlayEffect Green
+	MinimapIcon 1 Green Circle
+	DisableDropSound True
+	CustomAlertSound "1.mp3" 283
+
+Show
+Class "Currency"
+BaseType "Rib"
+	SetFontSize 45
+	SetTextColor 255 207 255
+	PlayEffect Green
+	MinimapIcon 1 Green Circle
+	DisableDropSound True
+	CustomAlertSound "1.mp3" 283
+
+Show
+Class "Currency"
+BaseType "Collarbone"
+	SetFontSize 45
+	SetTextColor 255 207 255
+	PlayEffect Green
+	MinimapIcon 1 Green Circle
+	DisableDropSound True
+	CustomAlertSound "1.mp3" 283
+
+##--------------------------------------------------------------Ritual----------------------------------------------------------------
+
+Show
+Class "Omen"
+	SetFontSize 45
+	SetTextColor 255 207 255
+	PlayEffect Red
+	MinimapIcon 1 Red Diamond
+	DisableDropSound True
+	CustomAlertSound "1.mp3" 283
 
 ##--------------------------------------------------------------Essences--------------------------------------------------------------
 
@@ -49,14 +122,14 @@ BaseType "Essence"
 
 ##--------------------------------------------------------------Delirium--------------------------------------------------------------
 
-Show
-BaseType = "Distilled" 
-	SetFontSize 40
-	SetTextColor 200 200 200 255
-	PlayEffect Grey
-	MinimapIcon 1 Grey Raindrop
-	DisableDropSound True
-	CustomAlertSound "2.mp3" 283
+#Show
+#BaseType = "Distilled" 
+	#SetFontSize 40
+	#SetTextColor 200 200 200 255
+	#PlayEffect Grey
+	#MinimapIcon 1 Grey Raindrop
+	#DisableDropSound True
+	#CustomAlertSound "2.mp3" 283
 
 Show
 BaseType = "Simulacrum Splinter" 
@@ -188,10 +261,58 @@ BaseType "Key"
 	SetTextColor 161 158 169 255
 	PlayAlertSound 2 300
 	PlayEffect Grey
-	MinimapIcon 1 White Star
+	MinimapIcon 2 White Star
 	DisableDropSound True
 	CustomAlertSound "1.mp3" 283
 
+#-------------------------------Jewels-------------------------------
+
+Show 
+Class "Jewel"
+BaseType "Time-Lost"
+	SetFontSize 35
+	SetBorderColor 103 194 223 255
+	PlayEffect Orange
+	MinimapIcon 1 Orange Star	
+
+Show 
+Class "Jewel"
+BaseType "Emerald"
+	SetFontSize 35
+	SetBorderColor 103 194 223 255
+	PlayEffect Green
+	MinimapIcon 1 Green Star	
+
+Show 
+Class "Jewel"
+BaseType "Ruby"
+	SetFontSize 35
+	SetBorderColor 103 194 223 255
+	PlayEffect Red
+	MinimapIcon 1 Red Star
+
+Show 
+Class "Jewel"
+BaseType "Sapphire" 
+	SetFontSize 35
+	SetBorderColor 103 194 223 255
+	PlayEffect Blue
+	MinimapIcon 1 Blue Star	
+
+Show 
+Class "Jewel"
+BaseType "Diamond" 
+	SetFontSize 35
+	SetBorderColor 103 194 223 255
+	PlayEffect White
+	MinimapIcon 1 White Star
+
+Show 
+Class "Jewel"
+	SetFontSize 35
+	SetBorderColor 103 194 223 255
+	PlayEffect Grey
+	MinimapIcon 1 Grey Star	
 
 ###---------------------------------------------------------------------------------------------Currency---------------------------------------------------------------------------------------------
 
@@ -263,16 +384,16 @@ BaseType "Orb of Annulment"
 
 #-------------------------------T1 currency-------------------------------
 
-#Show
-#Class "Currency"
-#BaseType "Fracturing Orb" "Fracturing Shard"
-#	SetFontSize 40
-#	SetTextColor 255 255 255 255
-#	SetBackgroundColor 255 90 35 255
-#	PlayEffect Orange
-#	MinimapIcon 1 Orange Circle
-#	DisableDropSound True
-#	CustomAlertSound "3Ahh_fascinating.mp3" 283
+Show
+Class "Currency"
+BaseType "Fracturing Orb" "Fracturing Shard"
+	SetFontSize 40
+	SetTextColor 255 255 255 255
+	SetBackgroundColor 255 90 35 255
+	PlayEffect Orange
+	MinimapIcon 1 Orange Circle
+	DisableDropSound True
+	CustomAlertSound "3Ahh_fascinating.mp3" 283
 
 Show 
 Class "Currency"
@@ -450,7 +571,7 @@ BaseType "Orb of Transmutation" "Transmutation Shard"
 
 #-------------------------------T4 Currency-------------------------------
 
-Hide
+Show
 Class "Currency"
 BaseType "Scroll of Wisdom" 
 	SetFontSize 35
@@ -504,9 +625,20 @@ BaseType "Gold"
 
 Show 
 Class "Currency"
-	SetFontSize 35
+	MinimapIcon 2 Grey Circle
+	SetFontSize 40
 
 ###---------------------------------------------------------------------------------------------Atlas Specific---------------------------------------------------------------------------------------------
+
+##--------------------------------------------------------------Map Fragments----------------------------------------------------------------
+
+Show 
+Class "Map Fragments"
+	SetFontSize 40
+	SetTextColor 255 255 255
+	PlayEffect Grey
+	MinimapIcon 0 Grey Diamond
+	DisableDropSound True
 
 ##--------------------------------------------------------------Waystones (Maps)--------------------------------------------------------------
 
@@ -627,19 +759,19 @@ BaseType "Tablet"
 
 ###---------------------------------------------------------------------------------------------Socketable---------------------------------------------------------------------------------------------
 
-#Show
-#Class "Socketable"
-#BaseType = "talisman"
-#	SetFontSize 45
-#	SetTextColor 255 207 255
-#	PlayEffect Purple
-#	MinimapIcon 1 Purple Pentagon
-#	DisableDropSound True
-#	CustomAlertSound "1.mp3" 283
+Show
+Class "Socketable"
+BaseType "talisman"
+	SetFontSize 45
+	SetTextColor 255 207 255
+	PlayEffect Purple
+	MinimapIcon 1 Purple Pentagon
+	DisableDropSound True
+	CustomAlertSound "1.mp3" 283
 
 Show
 Class "Socketable"
-BaseType = "soul core"
+BaseType "soul core"
 	SetFontSize 45
 	SetTextColor 160 37 30 255
 	PlayEffect Red
@@ -674,20 +806,19 @@ BaseType "Uncut Spirit"
 
 Show
 BaseType "Uncut Skill"
-	ItemLevel >= 15
-	AreaLevel > 65
 	SetFontSize 35
 	SetTextColor 255 255 255 255
 	PlayEffect White
 	MinimapIcon 1 White Triangle
-
-Hide
-BaseType "Uncut Skill"
 	
 ##--------------------------------------------------------------Support--------------------------------------------------------------
 
-Hide
-BaseType "Uncut Support"
+Show
+BaseType "Uncut Support"	
+	SetFontSize 35
+	SetTextColor 255 255 255 255
+	PlayEffect Grey
+	MinimapIcon 1 Grey Triangle
 
 ##--------------------------------------------------------------Catch All Uncut--------------------------------------------------------------
 	
@@ -709,12 +840,6 @@ Rarity Unique
 	DisableDropSound True
 	CustomAlertSound "2Multibase uniques.mp3" 283
 
-Show 
-Class "Jewel"
-	SetFontSize 35
-	SetTextColor 103 194 223 255
-	PlayEffect Cyan
-	MinimapIcon 1 Cyan Pentagon	
 Show
 Sockets > 0
 Class "Body" "Helmet" "Boots" "Gloves" "Shields" "Mace" "Staff" "Quarter" "Crossbow" "Wand" "Sceptre" "Foci" "Quiver" "Belt" "Bows" "Ring" "Amulet" "Flask" "Charm" "Spears" "Bucklers"
@@ -752,7 +877,7 @@ Class "Body" "Helmet" "Boots" "Gloves" "Shields" "Mace" "Staff" "Quarter" "Cross
 	MinimapIcon 2 Grey Hexagon
 	DisableDropSound True
 
-Hide
+Show
 Class "Flask"
 
 

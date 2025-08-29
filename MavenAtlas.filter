@@ -108,7 +108,7 @@ BaseType = "Breach Splinter"
 	PlayEffect Purple
 	MinimapIcon 0 Purple Moon
 	DisableDropSound True
-	CustomAlertSound "3.mp3" 283
+	CustomAlertSound "2.mp3" 283
 
 Show
 BaseType = "Breachstone"
@@ -126,7 +126,7 @@ BaseType = "Breach Ring"
 	PlayEffect Purple
 	MinimapIcon 1 Purple Moon
 	DisableDropSound True
-	CustomAlertSound "4.mp3" 283 
+	CustomAlertSound "3.mp3" 283 
 
 #-------------------------------Expedition-------------------------------
 Show
@@ -535,7 +535,7 @@ Class "Socketable"
 
 Show
 BaseType "Uncut"
-	ItemLevel >= 16
+	ItemLevel >= 17
 	SetFontSize 35
 	SetTextColor 255 255 255 255
 	PlayEffect White
