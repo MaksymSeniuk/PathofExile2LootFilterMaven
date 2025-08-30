@@ -122,14 +122,14 @@ BaseType "Essence"
 
 ##--------------------------------------------------------------Delirium--------------------------------------------------------------
 
-#Show
-#BaseType = "Distilled" 
-	#SetFontSize 40
-	#SetTextColor 200 200 200 255
-	#PlayEffect Grey
-	#MinimapIcon 1 Grey Raindrop
-	#DisableDropSound True
-	#CustomAlertSound "2.mp3" 283
+Show
+BaseType "Liquid" 
+	SetFontSize 40
+	SetTextColor 200 200 200 255
+	PlayEffect Grey
+	MinimapIcon 1 Grey Raindrop
+	DisableDropSound True
+	CustomAlertSound "2.mp3" 283
 
 Show
 BaseType = "Simulacrum Splinter" 
