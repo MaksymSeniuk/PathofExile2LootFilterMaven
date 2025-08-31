@@ -815,6 +815,8 @@ BaseType "Uncut Skill"
 
 Show
 Class "Gem"
+BaseType == "Ahn's Citadel" "Ailith's Chimes" "Amanamu's Tithe" "Arakaali's Lust" "Arbiter's Ignition" "Arjun's Medal" "Atalui's Bloodletting" "Atziri's Allure" "Brutus' Brain" "Daresso's Passion" "Doedre's Undoing" 			"Einhar's Beastrite" "Esh's Radiance" "Garukhan's Resolve" "Ixchel's Torment" "Kalisa's Crescendo" "Kaom's Madness" "Kulemak's Dominion" "Kurgal's Leash" "Paquate's Pact" "Piety's Mercy" "Ratha's Assault" "Rigwald's Ferocity" 	"Romira's Requital" "Sione's Temper" "Tacati's Ire" "Tawhoa's Tending" "Tecrod's Revenge" "Tul's Stillness" "Uhtred's Augury" "Uhtred's Exodus" "Uhtred's Omen" "Uruk's Smelting" "Uul-Netol's Embrace" "Varashta's Blessing" 	"Vilenta's Propulsion" "Xoph's Pyre" "Zarokh's Refrain" "Dialla's Desire" "Rakiata's Flow"
+	SetTextColor 250 154 70
 	SetFontSize 35
 	PlayEffect Brown
 	MinimapIcon 1 Brown Triangle
@@ -852,6 +854,14 @@ Class "Body" "Helmet" "Boots" "Gloves" "Shields" "Mace" "Staff" "Quarter" "Cross
 	SetFontSize 30
 	MinimapIcon 2 Yellow Hexagon
 	DisableDropSound True
+
+Show
+Rarity Normal Magic
+Class "Belt" "Ring" "Amulet" "Flask" "Charm"
+	SetFontSize 30
+	MinimapIcon 2 Grey Hexagon
+	DisableDropSound True
+
 
 Hide
 Rarity Magic
