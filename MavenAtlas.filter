@@ -51,8 +51,8 @@ Class "Pinnacle Keys"
 Show 
 Class "Map Fragments"
 BaseType "Kulemak's Invitation"
-	SetFontSize 40
-	SetTextColor 255 255 255
+	SetFontSize 35
+	SetTextColor 107 134 5
 	PlayEffect Green
 	MinimapIcon 0 Green Diamond
 	DisableDropSound True
@@ -60,38 +60,48 @@ BaseType "Kulemak's Invitation"
 Show
 Class "Socketable"
 BaseType "Gaze"
-	SetFontSize 45
-	SetTextColor 255 207 255
+	SetFontSize 30
+	SetTextColor 107 134 5
 	PlayEffect Green
-	MinimapIcon 1 Green Pentagon
+	MinimapIcon 2 Green Pentagon
 	DisableDropSound True
 	CustomAlertSound "1.mp3" 283
 
 Show
 Class "Currency"
 BaseType "Jawbone"
-	SetFontSize 45
-	SetTextColor 255 207 255
+	SetFontSize 30
+	SetTextColor 107 134 5
 	PlayEffect Green
-	MinimapIcon 1 Green Circle
+	MinimapIcon 2 Green Circle
 	DisableDropSound True
 	CustomAlertSound "1.mp3" 283
 
 Show
 Class "Currency"
 BaseType "Rib"
-	SetFontSize 45
-	SetTextColor 255 207 255
+	SetFontSize 30
+	SetTextColor 107 134 5
 	PlayEffect Green
-	MinimapIcon 1 Green Circle
+	MinimapIcon 2 Green Circle
+	DisableDropSound True
+	CustomAlertSound "1.mp3" 283
+
+Show
+Class "Currency"
+BaseType "Vertebrae"
+	SetFontSize 30
+	SetTextColor 107 134 5
+	PlayEffect Green
+	MinimapIcon 2 Green Circle
 	DisableDropSound True
 	CustomAlertSound "1.mp3" 283
 
 Show
 Class "Currency"
 BaseType "Collarbone"
-	SetFontSize 45
-	SetTextColor 255 207 255
+	SetFontSize 30
+	SetTextColor 107 134 5
 	PlayEffect Green
 	MinimapIcon 1 Green Circle
 	DisableDropSound True
@@ -101,7 +111,7 @@ BaseType "Collarbone"
 
 Show
 Class "Omen"
-	SetFontSize 45
+	SetFontSize 30
 	SetTextColor 255 207 255
 	PlayEffect Red
 	MinimapIcon 1 Red Diamond
@@ -112,7 +122,7 @@ Class "Omen"
 
 Show 
 BaseType "Essence" 
-	SetFontSize 40
+	SetFontSize 35
 	SetTextColor 70 181 175 255
 	PlayAlertSound 2 300
 	PlayEffect Cyan
@@ -124,7 +134,7 @@ BaseType "Essence"
 
 Show
 BaseType "Liquid" 
-	SetFontSize 40
+	SetFontSize 35
 	SetTextColor 200 200 200 255
 	PlayEffect Grey
 	MinimapIcon 1 Grey Raindrop
@@ -132,8 +142,8 @@ BaseType "Liquid"
 	CustomAlertSound "2.mp3" 283
 
 Show
-BaseType = "Simulacrum Splinter" 
-	SetFontSize 40
+BaseType "Simulacrum Splinter" 
+	SetFontSize 30
 	SetTextColor 200 200 200 255
 	PlayEffect Grey
 	MinimapIcon 0 Grey Raindrop
@@ -141,8 +151,8 @@ BaseType = "Simulacrum Splinter"
 	CustomAlertSound "3.mp3" 283
 
 Show
-BaseType = "Simulacrum" 
-	SetFontSize 40
+BaseType "Simulacrum" 
+	SetFontSize 30
 	SetTextColor 200 200 200 255
 	PlayEffect Grey
 	MinimapIcon 0 Grey Raindrop
@@ -152,8 +162,8 @@ BaseType = "Simulacrum"
 ##--------------------------------------------------------------Breach--------------------------------------------------------------
 
 Show
-BaseType = "Catalyst"
-	SetFontSize 40
+BaseType "Catalyst"
+	SetFontSize 30
 	SetTextColor 130 37 126 255
 	PlayEffect Purple
 	MinimapIcon 1 Purple Moon
@@ -162,16 +172,16 @@ BaseType = "Catalyst"
 
 Show
 BaseType = "Breach Splinter"
-	SetFontSize 40
+	SetFontSize 30
 	SetTextColor 130 37 126 255
 	PlayEffect Purple
 	MinimapIcon 0 Purple Moon
 	DisableDropSound True
-	CustomAlertSound "3.mp3" 283
+	CustomAlertSound "2.mp3" 283
 
 Show
 BaseType = "Breachstone"
-	SetFontSize 40
+	SetFontSize 30
 	SetTextColor 130 37 126 255
 	PlayEffect Purple
 	MinimapIcon 0 Purple Moon
@@ -180,18 +190,18 @@ BaseType = "Breachstone"
 
 Show
 BaseType = "Breach Ring"
-	SetFontSize 40
+	SetFontSize 30
 	SetTextColor 130 37 126 255
 	PlayEffect Purple
 	MinimapIcon 1 Purple Moon
 	DisableDropSound True
-	CustomAlertSound "4.mp3" 283 
+	CustomAlertSound "3.mp3" 283 
 
 ##--------------------------------------------------------------Expedition--------------------------------------------------------------
 
 Show
 BaseType "Logbook"
-	SetFontSize 45
+	SetFontSize 35
 	SetTextColor 43 69 128 255
 	PlayAlertSound 3 300
 	PlayEffect Blue
@@ -201,7 +211,7 @@ BaseType "Logbook"
 
 Show
 BaseType "Artifact"
-	SetFontSize 45
+	SetFontSize 30
 	SetTextColor 43 69 128 255
 	PlayAlertSound 3 300
 	PlayEffect Blue
@@ -211,13 +221,23 @@ BaseType "Artifact"
 
 Show
 BaseType "Exotic Coinage"
-	SetFontSize 45
+	SetFontSize 35
 	SetTextColor 43 69 128 255
 	PlayAlertSound 3 300
 	PlayEffect Blue
 	MinimapIcon 1 Blue Kite
 	DisableDropSound True
-	CustomAlertSound "3.mp3" 283
+	CustomAlertSound "2.mp3" 283
+
+Show
+BaseType "Runic Splinter"
+	SetFontSize 40
+	SetTextColor 43 69 128 255
+	PlayAlertSound 3 300
+	PlayEffect Blue
+	MinimapIcon 0 Blue Kite
+	DisableDropSound True
+	CustomAlertSound "2.mp3" 283
 
 ###---------------------------------------------------------------------------------------------Trial Specific---------------------------------------------------------------------------------------------
 
@@ -352,7 +372,7 @@ BaseType "Lesser Jeweller's Orb"
 	PlayEffect Brown
 	MinimapIcon 2 Brown Circle
 	DisableDropSound True
-	CustomAlertSound "2Special_mine.mp3" 283
+	CustomAlertSound "1.mp3" 283
 
 ##--------------------------------------------------------------Basic Currency--------------------------------------------------------------
 
@@ -498,7 +518,7 @@ BaseType "Regal Orb"
 	PlayEffect Yellow
 	MinimapIcon 2 Yellow Circle
 	DisableDropSound True
-	CustomAlertSound "2Uh unusual.mp3" 283
+	CustomAlertSound "2.mp3" 283
 
 Show 
 Class "Currency"
@@ -509,7 +529,7 @@ BaseType "Regal Shard"
 	PlayEffect Yellow
 	MinimapIcon 2 Yellow Circle
 	DisableDropSound True
-	CustomAlertSound "2Uh unusual.mp3" 283
+	CustomAlertSound "2.mp3" 283
 
 Show 
 Class "Currency"
@@ -521,7 +541,7 @@ SetFontSize 40
 	PlayEffect Grey
 	MinimapIcon 1 Grey Circle
 	DisableDropSound True
-	CustomAlertSound "2Uh unusual.mp3" 283
+	CustomAlertSound "1Good.mp3" 283
 
 Show 
 Class "Currency"
@@ -549,25 +569,64 @@ BaseType "Artificer's Shard"
 	DisableDropSound True
 	CustomAlertSound "1.mp3" 283
 
+#-------------------------------Augmentation-------------------------------
+
+Show 
+Class "Currency"
+BaseType "Greater Orb of Augmentation"
+	SetFontSize 35
+	DisableDropSound True
+	SetTextColor 78 180 255 185
+	PlayEffect Blue
+	MinimapIcon 1 Blue Circle
+	CustomAlertSound "2Uh unusual.mp3" 283
+
+Show 
+Class "Currency"
+BaseType "Perfect Orb of Augmentation"
+	SetFontSize 35
+	DisableDropSound True
+	SetTextColor 78 180 255 185
+	PlayEffect Blue
+	MinimapIcon 1 Blue Circle
+	CustomAlertSound "2.mp3" 283
+
 Show 
 Class "Currency"
 BaseType "Orb of Augmentation"
 	SetFontSize 35
 	DisableDropSound True
 	SetTextColor 78 180 255 185
-	PlayEffect Blue
-	MinimapIcon 2 Blue Circle
-	CustomAlertSound "1.mp3" 283
+	
+
+#-------------------------------Transmutation-------------------------------
 
 Show 
 Class "Currency"
-BaseType "Orb of Transmutation" "Transmutation Shard" 
+BaseType "Perfect Orb of Transmutation"
 	SetFontSize 35
 	DisableDropSound True
 	SetTextColor 58 95 170 255
 	PlayEffect Blue
-	MinimapIcon 2 Blue Circle
-	CustomAlertSound "1.mp3" 283
+	MinimapIcon 1 Blue Circle
+	CustomAlertSound "2Uh unusual.mp3" 283
+
+Show 
+Class "Currency"
+BaseType "Greater Orb of Transmutation"
+	SetFontSize 30
+	DisableDropSound True
+	SetTextColor 58 95 170 255
+	PlayEffect Blue
+	MinimapIcon 1 Blue Circle
+	CustomAlertSound "2.mp3" 283
+
+Show 
+Class "Currency"
+BaseType "Orb of Transmutation" "Transmutation Shard" 
+	SetFontSize 30
+	DisableDropSound True
+	SetTextColor 58 95 170 255
 
 #-------------------------------T4 Currency-------------------------------
 
@@ -582,7 +641,7 @@ Show
 Class "Currency"
 BaseType "Gold"
 StackSize >= 1000
-	SetFontSize 30
+	SetFontSize 15
 	SetTextColor 180 180 180 255
 	SetBorderColor 20 0 40 255
 	SetBackgroundColor 20 0 40 180
@@ -593,7 +652,7 @@ Show
 Class "Currency"
 BaseType "Gold"
 StackSize >= 500
-	SetFontSize 30
+	SetFontSize 15
 	SetTextColor 180 180 180 255
 	SetBorderColor 20 0 40 255
 	SetBackgroundColor 20 0 40 180
@@ -604,7 +663,7 @@ Show
 Class "Currency"
 BaseType "Gold"
 StackSize >= 100
-	SetFontSize 30
+	SetFontSize 15
 	SetTextColor 180 180 180 255
 	SetBorderColor 20 0 40 255
 	SetBackgroundColor 20 0 40 180
@@ -614,7 +673,7 @@ StackSize >= 100
 Show 
 Class "Currency"
 BaseType "Gold"
-	SetFontSize 30
+	SetFontSize 15
 	SetTextColor 180 180 180 255
 	SetBorderColor 20 0 40 255
 	SetBackgroundColor 20 0 40 180
@@ -652,7 +711,7 @@ BaseType "Waystone (Tier 10)" "Waystone (Tier 11)" "Waystone (Tier 12)" "Wayston
 	PlayEffect White
 	MinimapIcon 0 White Square
 	DisableDropSound True
-	CustomAlertSound "6map high t.mp3" 283
+	CustomAlertSound "1.mp3" 283
 
 #-------------------------------Low Tier-------------------------------
 
@@ -664,7 +723,7 @@ BaseType "Waystone (Tier 1)" "Waystone (Tier 2)" "Waystone (Tier 3)" "Waystone (
 	PlayEffect White
 	MinimapIcon 1 White Square
 	DisableDropSound True
-	CustomAlertSound "6map low t.mp3" 283
+	CustomAlertSound "1.mp3" 283
 
 #-------------------------------Catch All Waystones-------------------------------
 
@@ -675,7 +734,7 @@ Class "Waystones"
 	PlayEffect White
 	MinimapIcon 2 White Square
 	DisableDropSound True
-	CustomAlertSound "6map low t.mp3" 283
+	CustomAlertSound "1.mp3" 283
 
 ##--------------------------------------------------------------Precursor Tablets--------------------------------------------------------------
 
@@ -731,7 +790,7 @@ BaseType "Ritual Precursor Tablet"
 	SetTextColor 205 0 0 255
 	PlayAlertSound 2 300
 	PlayEffect Purple
-	MinimapIcon 1 Purple Square
+	MinimapIcon 1 Red Square
 	CustomAlertSound "2.mp3" 283
 
 #-------------------------------Iradiated Tablets-------------------------------
@@ -848,20 +907,61 @@ Rarity Unique
 	DisableDropSound True
 	CustomAlertSound "2Multibase uniques.mp3" 283
 
-Show 
-Rarity Rare
-Class "Body" "Helmet" "Boots" "Gloves" "Shields" "Mace" "Staff" "Quarter" "Crossbow" "Wand" "Sceptre" "Foci" "Quiver" "Belt" "Bows" "Ring" "Amulet" "Flask" "Charm" "Spears" "Bucklers"
+Show
+BaseType "Lunar Amulet"
+	Identified False
 	SetFontSize 30
-	MinimapIcon 2 Yellow Hexagon
+	MinimapIcon 2 Blue Hexagon
 	DisableDropSound True
 
 Show
-Rarity Normal Magic
-Class "Belt" "Ring" "Amulet" "Flask" "Charm"
+BaseType "Slipstrike Vest" "Exquisite Vest" "Ancestral Tiara"
+	Identified False
+	SetFontSize 30
+	MinimapIcon 2 Blue Hexagon
+	DisableDropSound True
+
+Show
+Sockets > 1
+Class "Body" "Helmet" "Boots" "Gloves" "Shields" "Mace" "Staff" "Quarter" "Crossbow" "Wand" "Sceptre" "Foci" "Quiver" "Belt" "Bows" "Ring" "Amulet" "Flask" "Charm" "Spears" "Bucklers"
+	SetFontSize 35
+	MinimapIcon 1 Grey Pentagon
+	PlayEffect Grey
+	DisableDropSound True
+
+Show
+Quality > 0
+Class "Body" "Helmet" "Boots" "Gloves" "Shields" "Mace" "Staff" "Quarter" "Crossbow" "Wand" "Sceptre" "Foci" "Quiver" "Belt" "Bows" "Ring" "Amulet" "Flask" "Charm" "Spears" "Bucklers"
+	SetFontSize 35
+	MinimapIcon 1 White Hexagon
+	PlayEffect Grey
+	DisableDropSound True
+Show 
+Rarity Magic
+BaseType "Gemini Bow"
+	Identified False
+	SetFontSize 30
+	MinimapIcon 2 Blue Hexagon
+	DisableDropSound True
+
+Show 
+Rarity Normal
+BaseType "Gemini Bow"
 	SetFontSize 30
 	MinimapIcon 2 Grey Hexagon
 	DisableDropSound True
 
+Show 
+Rarity Rare
+Class "Body" "Helmet" "Boots" "Gloves" "Shields" "Mace" "Staff" "Quarter" "Crossbow" "Wand" "Sceptre" "Foci" "Quiver" "Belt" "Bows" "Ring" "Amulet" "Flask" "Charm" "Spears" "Bucklers"
+	Identified False
+	SetFontSize 30
+	MinimapIcon 2 Yellow Hexagon
+	DisableDropSound True
+
+Hide
+Rarity Rare
+Class "Body" "Helmet" "Boots" "Gloves" "Shields" "Mace" "Staff" "Quarter" "Crossbow" "Wand" "Sceptre" "Foci" "Quiver" "Belt" "Bows" "Ring" "Amulet" "Flask" "Charm" "Spears" "Bucklers"
 
 Hide
 Rarity Magic
@@ -875,22 +975,6 @@ Rarity Normal
 Class "Body" "Helmet" "Boots" "Gloves" "Shields" "Mace" "Staff" "Quarter" "Crossbow" "Wand" "Sceptre" "Foci" "Quiver" "Belt" "Bows" "Ring" "Amulet" "Flask" "Charm" "Spears" "Bucklers"
 	SetFontSize 30
 	MinimapIcon 2 Grey Hexagon
-	DisableDropSound True
-
-Show
-Sockets > 0
-Class "Body" "Helmet" "Boots" "Gloves" "Shields" "Mace" "Staff" "Quarter" "Crossbow" "Wand" "Sceptre" "Foci" "Quiver" "Belt" "Bows" "Ring" "Amulet" "Flask" "Charm" "Spears" "Bucklers"
-	SetFontSize 35
-	MinimapIcon 1 Grey Pentagon
-	PlayEffect Grey
-	DisableDropSound True
-
-Show
-Quality > 0
-Class "Body" "Helmet" "Boots" "Gloves" "Shields" "Mace" "Staff" "Quarter" "Crossbow" "Wand" "Sceptre" "Foci" "Quiver" "Belt" "Bows" "Ring" "Amulet" "Flask" "Charm" "Spears" "Bucklers"
-	SetFontSize 35
-	MinimapIcon 1 White Hexagon
-	PlayEffect Grey
 	DisableDropSound True
 
 Hide
